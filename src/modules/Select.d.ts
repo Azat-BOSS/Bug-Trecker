@@ -1,4 +1,5 @@
 import { ISelect } from "../utils/interfaces/interfaces"
+import "../utils/select/js/nice-select2.js"
 
 export class Select implements ISelect {
   readonly classSelect: string
