@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/utils/select/css/nice-select2.css" />
+    <link rel="stylesheet" href="src/style.css">
+    <title>Bug Tracker</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+          <div class="header__container">
+            <img src="icons/logo.svg" alt="logo" class="header__logo">
+            <div class="header__block">
+              <img src="icons/Search.svg" alt="search" class="header__icon">
+              <select class="select">
+                <option data-display="Polygon"></option>
+                <option data-display="DeNet Chat"></option>
+                <option data-display="DeNet NFT"></option>
+                <option data-display="DeNet Desk"></option>
+              </select>
+              <ul class="header__info">
+                <li class="header__info-li">
+                  <p class="header__info-text">Used: <strong class="header__info-strong">0.4 GB</strong></p>
+                </li>
+                <li class="header__info-li">
+                  <p class="header__info-text">Balance: <strong class="header__info-strong">0.6 TBY</strong></p>
+                </li>
+              </ul>
+              <img src="icons/Profile.svg" alt="profile" class="header__profile">
+            </div>
+          </div>
+      </header> 
+      <main class="main">
+        <section class="info">
+          <div class="info__upper">
+            <div class="info__upper-buttons">
+              <button class="info__upper-button">BUGS</button>
+              <button class="info__upper-button info__upper-button_disabled">suggestions</button>
+            </div>
+            <span class="info__title-block">
+              <img src="/icons/spider.svg" alt="spider" class="info__title-image">
+              <h3 class="info__title">BUG TRACKER</h3>
+            </span>
+            <div class="info__right-block">
+              <select class="info__select">
+                <option class="info__option" disabled data-display="You can report a bug or send a suggestion to DeNet Deve
+                lopers Team. On the team consideration DeNet can reward you, if the bug or a sugge
+                stion will be the first in it's kind.
+                The reward is represented in decentralized storage capacity up to 10 GB. 
+                Using it you can stake your NFTs and store any other files in 
+                DeNet Ecosystem for free."></option>
+              </select>
+              <span class="info__button-block">
+                <button class="info__button-copy">
+                  0xa0d6....3EC6
+                </button>
+                <p class="info__button-text">Click to copy</p>
+              </span>
+              <button class="info__button-logout">
+                <img src="/icons/log-out.svg" alt="logout" class="info__button-icon">
+              </button>
+            </div>
+          </div>
+          <div class="info__middle">
+            <h4 class="info__middle-title">BUG LIST</h4>
+            <button class="info__middle-button">+ New bug</button>
+          </div>
+          <div class="info__bottom">
+            <button class="info__bottom-button">#</button>
+            <button class="info__bottom-button">BUG</button>
+            <button class="info__bottom-button">App</button>
+            <button class="info__bottom-button">Status</button>
+            <button class="info__bottom-button">Created</button>
+          </div>
+        </section>
+
+        <template id="template-usr">
+          <div class="template-usr__container">
+            <p class="template-usr__id"></p>
+            <p class="template-usr__bug"></p>
+            <p class="template-usr__app"></p>
+            <span class="template-usr__status"></span>
+            <span class="template-usr__data"></span>
+          </div>
+        </template>
+
+      </main>
+
+      <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__container">
+          <button class="modal__button-close">x</button>
+          <h4 class="modal__title">Button not working!Button not working!Button not working!</h4>
+          <div class="modal__upper-data">
+            <div class="modal__upper-info">
+              <address class="modal__upper-text">Address: <strong>d85sa...d85sa</strong></address>
+              <address class="modal__upper-text">Address: <strong>d85sa...d85sa</strong></address>
+              <address class="modal__upper-text">Address: <strong>d85sa...d85sa</strong></address>
+              <address class="modal__upper-text">Address: <strong>d85sa...d85sa</strong></address>
+            </div>
+            <button class="modal__button modal__button_progress">In progress</button>
+          </div>
+          <div class="modal__middle-data">
+            <button class="modal__button modal__button_bug">add bug to redmine</button>
+            <span class="modal__middle-link"> 
+              <input type="text" class="modal__input modal__input_middle" placeholder="Link from redmine">
+              <button class="modal__button modal__button_link">add link</button>
+            </span>
+          </div>
+          <p class="modal__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Potenti 
+            incidunt aliquet nisl netus cras id est arcu. Fames orci habitasse mauris 
+            eu massa gravida amet. Eu morbi enim eu nec. Fringilla vitae fermentum sit tincidunt scelerisq
+            ue nisl fermentum, commodo viverra. Varius eu amet enim fermentum quis morbi quisque fringilla in. Egestas dignissi
+            m fringilla sapien augue viverra. At pulvinar lacus enim in volutpat integer tortor. Felis, nibh odio fermentum nisi, se
+            d. Vulputate scelerisque ultrices non aliquam et nulla etiam pretium urna. Turpis nam purus vulputate 
+            at congue. Id amet ac mauris egestas in ipsum id.
+          </p>
+          <ul class="modal__images-info">
+            <li class="modal__image-info">image_2022-02-17_10-17-38. PNG</li>
+            <li class="modal__image-info">image_2022-02-17_10-17-38. PNG</li>
+            <li class="modal__image-info">image_2022-02-17_10-17-38. PNG</li>
+            <li class="modal__image-info">image_2022-02-17_10-17-38. PNG</li>
+            <li class="modal__image-info">image_2022-02-17_10-17-38. PNG</li>
+            <li class="modal__image-info">image_2022-02-17_10-17-38. PNG</li>
+          </ul>
+          <div class="modal__bottom">
+            <span class="modal__bottom-send"> 
+              <input type="text" class="modal__input modal__input_bottom" placeholder="Thanks for the suggestions keep the bounty">
+              <button class="modal__button modal__button_bottom"></button>
+            </span>
+            <select class="modal__select">
+              <option data-display="New"></option>
+              <option data-display="Solved"></option>
+              <option data-display="On review"></option>
+              <option data-display="In progress"></option>
+              <option data-display="Deferred"></option>
+              <option data-display="Rejected"></option>
+            </select>
+            <button class="modal__button-delete">
+              <img src="/icons/buck.svg" alt="buck" class="modal__button-delete-img">
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="src/utils/select/js/nice-select2.js"></script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

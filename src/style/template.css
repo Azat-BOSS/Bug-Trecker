@@ -1,0 +1,58 @@
+.user__container {
+  margin: 4rem 0
+}
+.template-usr__container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+  width: 120rem;
+  height: 8.6rem;
+  border-bottom: 1px solid #ebebeb;
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.template-usr__bug {
+  display: flex;
+  justify-self: flex-start;
+  margin-left: 5rem;
+}
+.template-usr__app {
+  display: flex;
+  justify-self: flex-start;
+  margin-left: 5.5rem;
+}
+.template-usr__status {
+  width: 15rem;
+  height: 3.5rem;
+  border: 1px solid #ffd600;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+.template-usr__status_new {
+  border: 1px solid #32a143;
+}
+.template-usr__status_progress {
+  background-color: #ffd600;
+  border: none;
+}
+.template-usr__status_rejected {
+  background-color: #ed4848;
+  border: none;
+  color: white;
+}
+.template-usr__status_solved {
+  background-color: #32a143;
+  border: none;
+  color: white;
+}
+.template-usr__status_deferred {
+  border: 1px solid #ed4848;
+}
+.template-usr__data {
+  display: flex;
+  justify-self: flex-end;
+}
